@@ -16,7 +16,7 @@ const CategoryNews = () => {
                     
                     : 
                     
-                    news.map(elNews => <SIngleNews singleNews={elNews} key={SIngleNews._id}/>)
+                    news.map(elNews => <SIngleNews singleNews={elNews} key={elNews._id}/>)
                     
                 }
 

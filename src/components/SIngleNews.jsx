@@ -30,7 +30,7 @@ const SIngleNews = (props = {}) => {
       <figure className="p-5">
         <img src={singleNews.thumbnail_url} alt="Thumbnail" className="w-full h-[350px] object-cover object-center rounded-lg" />
       </figure>
-      <p className="p-4 text-gray-600">{limitWord(singleNews.details, 22)} <Link className='text-red-500'>Read more</Link> </p>
+      <p className="p-4 text-gray-600">{limitWord(singleNews.details, 22)} <Link to={`/news/${singleNews._id}`} className='text-red-500'>Read more</Link> </p>
       <div className="card-actions justify-between items-center px-4 pb-4">
         <div className="flex items-center space-x-2">
           <span className="text-yellow-500"> 
